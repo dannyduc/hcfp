@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Web Form Design and Development :: Lesson 1</title>
+	<meta name="description" content="A Tuts+ Course">
+	<meta name="author" content="Adi Purdila">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="demo-header">
+		<hgroup>
+			<h1>Web Form Design and Development</h1>
+			<h3>Lesson 1: Form elements overview - part 1</h3>
+		</hgroup>
+	</header>
+	
+	<div class="demo-lesson-nav">
+		<a href="lesson2.html" class="demo-lesson-nav-next">Next Lesson &rarr;</a>
+	</div> <!-- end demo-lesson-nav -->
+
+	<div class="demo-container">
+
+		<form onreset="return confirm('Are you sure you want to reset the form?');">
+			<p>
+				<label for="textdemo">Text:</label>
+				<input type="text" id="textdemo" />
+			</p>
+
+			<p>
+				<label for="pwddemo">Password:</label>
+				<input type="password" id="pwddemo" />
+			</p>
+			
+			<p>
+				<input type="checkbox" id="checkdemo" />
+				<label for="checkdemo">This is a checkbox</label>
+				<br />
+				<input type="checkbox" id="checkdemo-2" />
+				<label for="checkdemo-2">This is another checkbox</label>
+			</p>
+			
+			<p>
+				<input type="radio" id="radio1" name="radiodemo1" />
+				<label for="radio1">Radio 1</label>
+				<br />
+				<input type="radio" id="radio2" name="radiodemo" />
+				<label for="radio2">Radio 2</label>
+				<br />
+				<input type="radio" id="radio3" name="radiodemo" />
+				<label for="radio3">Radio 3</label>
+			</p>
+			
+			<p>
+				<label for="filedemo">Select a file:</label>
+				<input type="file" id="filedemo" accept="image/jpeg" />
+			</p>
+			
+			<input type="hidden" value="This is a value" />
+			
+			<p>
+				<input type="button" value="This is an input type button" onclick="alert('Hey, I\'ve been clicked!');" />
+			</p>
+			
+			<p>
+				<input type="submit" value="Send Message" />
+				<input type="reset" value="Delete all data" />
+			</p>
+			
+			<p>
+				<input type="image" src="images/button.png" alt="This is an image" />
+			</p>
+		</form>
+
+	</div> <!-- end demo-container -->
+	
+	<footer class="demo-footer">
+		<p><small>a <a href="https://tutsplus.com/">Tuts+</a> course by Adi Purdila</small></p>
+	</footer>
+
+</body>
+</html>

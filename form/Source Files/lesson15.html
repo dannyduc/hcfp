@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Web Form Design and Development :: Lesson 15</title>
+	<meta name="description" content="A Tuts+ Course">
+	<meta name="author" content="Adi Purdila">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="demo-header">
+		<hgroup>
+			<h1>Web Form Design and Development</h1>
+			<h3>Lesson 15: Introducing the Datalist element</h3>
+		</hgroup>
+	</header>
+	
+	<div class="demo-lesson-nav">
+		<a href="lesson14.html" class="demo-lesson-nav-prev">&larr; Previous Lesson</a>
+		<a href="lesson16.html" class="demo-lesson-nav-next">Next Lesson &rarr;</a>
+	</div> <!-- end demo-lesson-nav -->
+
+	<div class="demo-container">
+		<form>
+			<fieldset>
+				<legend>This is a form using the datalist element</legend>
+				<p>
+					<label for="demo-text">What's your name?</label><br />
+					<input type="text" name="demo-text" id="demo-text" list="names" />
+					<datalist id="names">
+						<option value="Adi" label="Adi Purdila" />
+						<option value="Albert" />
+						<option value="John" />
+						<option value="James" />
+						<option value="Robert" />
+					</datalist>
+				</p>
+			</fieldset>
+		</form>
+	</div> <!-- end demo-container -->
+	
+	<footer class="demo-footer">
+		<p><small>a <a href="https://tutsplus.com/">Tuts+</a> course by Adi Purdila</small></p>
+	</footer>
+
+</body>
+</html>

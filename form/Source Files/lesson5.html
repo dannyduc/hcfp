@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Web Form Design and Development :: Lesson 5</title>
+	<meta name="description" content="A Tuts+ Course">
+	<meta name="author" content="Adi Purdila">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="demo-header">
+		<hgroup>
+			<h1>Web Form Design and Development</h1>
+			<h3>Lesson 5: New input types in HTML5</h3>
+		</hgroup>
+	</header>
+	
+	<div class="demo-lesson-nav">
+		<a href="lesson4.html" class="demo-lesson-nav-prev">&larr; Previous Lesson</a>
+		<a href="lesson6.html" class="demo-lesson-nav-next">Next Lesson &rarr;</a>
+	</div> <!-- end demo-lesson-nav -->
+
+	<div class="demo-container">
+		<form>
+			<fieldset>
+				<legend>New Input Types</legend>
+				
+				<p>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" />
+				</p>
+				
+				<p>
+					<label for="search">Search:</label>
+					<input type="search" id="search" name="search" />
+				</p>
+				
+				<p>
+					<label for="number">Number:</label>
+					<input type="number" id="number" name="number" min="1" max="20" step="1.5" />
+				</p>
+				
+				<p>
+					<label for="color">Color:</label>
+					<input type="color" id="color" name="color" />
+				</p>
+				
+				<p>
+					<label for="date">Date:</label>
+					<input type="date" id="date" name="date" min="2013-01-01" max="2014-01-01" />
+				</p>
+
+				<p>
+					<label for="month">Month:</label>
+					<input type="month" id="month" name="month" />
+				</p>
+
+				<p>
+					<label for="week">Week:</label>
+					<input type="week" id="week" name="week" />
+				</p>
+
+				<p>
+					<label for="time">Time:</label>
+					<input type="time" id="time" name="time" />
+				</p>
+			</fieldset>
+		</form>
+
+	</div> <!-- end demo-container -->
+	
+	<footer class="demo-footer">
+		<p><small>a <a href="https://tutsplus.com/">Tuts+</a> course by Adi Purdila</small></p>
+	</footer>
+
+</body>
+</html>

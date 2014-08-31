@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://raw.githack.com/CrossEye/ramda/master/ramda.js"></script>
+    <script src="http://looprecur.com/hostedjs/pointfree.browser.js"></script>
+    <script src="http://looprecur.com/hostedjs/io.js"></script>
+    <!--<script src="ramda.js"></script>-->
+</head>
+<body>
+<form>
+    <input id="full_name" name="full_name" type="text" value="Jonathan Gregory Brandis"/>
+</form>
+
+<script>
+    var _ = ramda
+        ,compose = _.compose
+        ,split = _.split;
+
+    var P = PointFree;
+
+    var get = _.curry(function(name, object) { return object[name]; });
+
+    //var getElement = document.querySelector;
+    var getElement = function(x) {
+        return document.querySelector(x);
+    };
+
+    var getNameParts = compose(split(' '), get('value'), getElement);
+
+    var parts = getNameParts('#full_name');
+    console.log(parts);
+
+</script>
+</body>
+</html>

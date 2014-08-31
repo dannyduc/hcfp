@@ -1,0 +1,184 @@
+/***********************************************************************************************/
+/* Demo Styles */
+/***********************************************************************************************/
+* {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  color: #141414;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: #5DB6CF;
+}
+a:hover {
+  color: #141414;
+}
+.demo-container {
+  margin: 2em 5em;
+  overflow: hidden;
+}
+.demo-header {
+  background-color: #23262B;
+  padding: 2em 5em;
+}
+.demo-header h1 {
+  color: white;
+  font-weight: normal;
+}
+.demo-header h3 {
+  color: #777A7F;
+  font-weight: 300;
+}
+.demo-footer {
+  border-top: 1px solid #eaeaea;
+  padding: 1em 5em;
+}
+.demo-lesson-nav {
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #f2f2f3;
+  overflow: hidden;
+  padding: 1em 5em;
+}
+.demo-lesson-nav-next {
+  float: right;
+}
+.demo-col-one-half {
+  width: 45%;
+  margin-right: 5%;
+  float: left;
+}
+.demo-input-info {
+  font-size: 80%;
+  font-style: italic;
+  margin-left: 1em;
+}
+.demo-errors {
+  color: red;
+  font-size: 80%;
+  display: block;
+  font: sans-serif;
+}
+.demo-hr {
+  background-color: #EAEAEA;
+  border: none;
+  height: 1px;
+  margin: 2em 0;
+}
+#form-new-account {
+  position: relative;
+}
+.ajax-message {
+  background-color: #FAFAFA;
+  display: none;
+  padding: 1em;
+  position: absolute;
+  right: 3em;
+  top: 3em;
+}
+.ajax-success {
+  background-color: #e9efda;
+  border: 1px solid #b6cf7b;
+}
+.ajax-error {
+  background-color: #f8edeb;
+  border: 1px solid #dd5f4b;
+}
+/***********************************************************************************************/
+/* Form elements styling */
+/***********************************************************************************************/
+#demo-form label {
+  display: block;
+}
+#demo-form input[type="checkbox"] + label,
+#demo-form input[type="radio"] + label {
+  display: inline-block;
+}
+#demo-form input[type="text"],
+#demo-form textarea {
+  border: 1px solid #d6d8d9;
+  padding: .5em;
+  outline: none;
+  width: 300px;
+}
+#demo-form input[type="text"]:hover,
+#demo-form textarea:hover,
+#demo-form input[type="text"]:focus,
+#demo-form textarea:focus {
+  background-color: #fcfcfc;
+  border: 1px solid #cccdce;
+}
+#demo-form textarea {
+  width: 600px;
+}
+#demo-form fieldset {
+  border: 4px double #eaeaea;
+  border-radius: 5px;
+  padding: 2em;
+}
+#demo-form fieldset legend {
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: .5em 1em;
+  text-transform: uppercase;
+}
+#demo-form input[type="submit"],
+#demo-form button {
+  border: none;
+  background-color: #73C0D5;
+  border-radius: 5px;
+  color: white;
+  padding: 1em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+#demo-form input[type="submit"]:hover,
+#demo-form button:hover {
+  background-color: #87c9db;
+}
+#demo-form select {
+  background-color: white;
+  border: 1px solid #d6d8d9;
+  padding: .5em;
+  outline: none;
+  width: 300px;
+}
+#demo-form input[type="checkbox"],
+#demo-form input[type="radio"] {
+  display: none;
+}
+#demo-form input[type="checkbox"] + label:before {
+  background-color: white;
+  border: 1px solid #d6d8d9;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin: -2px 6px 0 0;
+  vertical-align: middle;
+  width: 16px;
+}
+#demo-form input[type="checkbox"]:checked + label:before {
+  content: "\2713";
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+#demo-form input[type="radio"] + label:before {
+  background-color: white;
+  border: 1px solid #d6d8d9;
+  border-radius: 12px;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  margin: -2px 6px 0 0;
+  vertical-align: middle;
+  width: 12px;
+}
+#demo-form input[type="radio"]:checked + label:before {
+  content: "\2022";
+  font-size: 26px;
+  text-align: center;
+  line-height: 13px;
+}

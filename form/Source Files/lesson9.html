@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Web Form Design and Development :: Lesson 9</title>
+	<meta name="description" content="A Tuts+ Course">
+	<meta name="author" content="Adi Purdila">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="demo-header">
+		<hgroup>
+			<h1>Web Form Design and Development</h1>
+			<h3>Lesson 9: Server-side validation (the AJAX method)</h3>
+		</hgroup>
+	</header>
+	
+	<div class="demo-lesson-nav">
+		<a href="lesson8.html" class="demo-lesson-nav-prev">&larr; Previous Lesson</a>
+		<a href="lesson10.html" class="demo-lesson-nav-next">Next Lesson &rarr;</a>
+	</div> <!-- end demo-lesson-nav -->
+
+	<div class="demo-container">
+		<form action="scripts/lesson 9/validate.php" method="POST" id="form-new-account" novalidate>
+			<fieldset>
+				<legend>Create a New Account</legend>
+				<p>
+					<label for="name">Name:</label><br />
+					<input type="text" name="name" id="name" maxlength="25" class="validate-locally" />
+					<span class="demo-input-info">E.g. John Smith, must be between 3 and 25 characters, letters and spaces only</span>
+					<span class="demo-errors"></span>
+				</p>
+
+				<p>
+					<label for="username">Username:</label><br />
+					<input type="text" name="username" id="username" maxlength="15" class="validate-locally" />
+					<span class="demo-input-info">E.g. johnsmith, must be between 3 and 15 alphanumeric characters</span>
+					<span class="demo-errors"></span>
+				</p>
+
+				<p>
+					<label for="username">Gender:</label><br />
+					<select name="gender" id="gender">
+						<option value="0">- Select a Value -</option>
+						<option value="1">Male</option>
+						<option value="2">Female</option>
+					</select>
+					<span class="demo-errors"></span>
+				</p>
+
+				<p>
+					<label for="email">Email Address:</label><br />
+					<input type="email" name="email" id="email" class="validate-locally" />
+					<span class="demo-input-info">E.g. john@company.com</span>
+					<span class="demo-errors"></span>
+				</p>
+
+				<p>
+					<label for="password">Password:</label><br />
+					<input type="password" name="password" id="password" class="validate-locally" />
+					<span class="demo-input-info">Must be 6 characters minimum, alphanumeric</span>
+					<span class="demo-errors"></span>
+				</p>
+				
+				<p>
+					<label for="confirm-password">Confirm Password:</label><br />
+					<input type="password" name="confirm-password" id="confirm-password" class="validate-locally" />
+					<span class="demo-errors"></span>
+				</p>
+				
+				<p>
+					<input type="checkbox" id="subscribe" name="subscribe" />
+					<label for="subscribe">Subscribe to newsletter</label>
+				</p>
+
+				<p>
+					<input type="submit" value="Create Account" name="submit" />
+				</p>
+				
+				<p><small><em>Note: All fields are required!</em></small></p>
+				
+				<div class="ajax-message"></div> <!-- end ajax-message -->
+			</fieldset>
+		</form>
+
+	</div> <!-- end demo-container -->
+	
+	<footer class="demo-footer">
+		<p><small>a <a href="https://tutsplus.com/">Tuts+</a> course by Adi Purdila</small></p>
+	</footer>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="scripts/lesson 9/validate.js"></script>
+
+</body>
+</html>

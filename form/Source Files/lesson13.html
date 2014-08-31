@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Web Form Design and Development :: Lesson 13</title>
+	<meta name="description" content="A Tuts+ Course">
+	<meta name="author" content="Adi Purdila">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="demo-header">
+		<hgroup>
+			<h1>Web Form Design and Development</h1>
+			<h3>Lesson 13: Custom form styling</h3>
+		</hgroup>
+	</header>
+	
+	<div class="demo-lesson-nav">
+		<a href="lesson12.html" class="demo-lesson-nav-prev">&larr; Previous Lesson</a>
+		<a href="lesson14.html" class="demo-lesson-nav-next">Next Lesson &rarr;</a>
+	</div> <!-- end demo-lesson-nav -->
+
+	<div class="demo-container">
+		<form id="demo-form">
+			<fieldset>
+				<legend>This is a form</legend>
+				<p>
+					<label for="demo-text">Text input:</label>
+					<input type="text" name="demo-text" id="demo-text" />
+				</p>
+
+				<p>
+					<label for="demo-textarea">Textarea:</label>
+					<textarea name="demo-textarea" id="demo-textarea" cols="30" rows="10"></textarea>
+				</p>
+				
+				<hr class="demo-hr" />
+				
+				<p>
+					<label for="demo-select">Select:</label>
+					<select name="demo-select" id="demo-select">
+						<option value="0">- Select a Value -</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+					</select>
+				</p>
+
+				<p>
+					<label for="demo-select-multiple">Multiple select:</label>
+					<select name="demo-select-multiple" id="demo-select-multiple" multiple="multiple">
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+					</select>
+				</p>
+
+				<hr class="demo-hr" />
+
+				<p>
+					<input type="radio" name="demo-radio" id="demo-radio-1" />
+					<label for="demo-radio-1">Radio 1</label>
+
+					<input type="radio" name="demo-radio" id="demo-radio-2" />
+					<label for="demo-radio-2">Radio 2</label>
+
+					<input type="radio" name="demo-radio" id="demo-radio-3" />
+					<label for="demo-radio-3">Radio 3</label>
+				</p>
+
+				<p>
+					<input type="checkbox" id="demo-checkbox" name="demo-checkbox" />
+					<label for="demo-checkbox">Checkbox demo</label>
+				</p>
+
+				<hr class="demo-hr" />
+
+				<p>
+					<label for="demo-file">File:</label>
+					<input type="file" id="demo-file" />
+					
+					<button id="file-replacement">Choose File</button>
+				</p>
+
+				<hr class="demo-hr" />
+				
+				<p>
+					<button>A <em>simple</em> button</button>
+				</p>
+
+				<p>
+					<input type="submit" value="Input type submit" name="demo-submit" />
+				</p>
+			</fieldset>
+		</form>
+
+	</div> <!-- end demo-container -->
+	
+	<footer class="demo-footer">
+		<p><small>a <a href="https://tutsplus.com/">Tuts+</a> course by Adi Purdila</small></p>
+	</footer>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="scripts/lesson 13/scripts.js"></script>
+
+</body>
+</html>
